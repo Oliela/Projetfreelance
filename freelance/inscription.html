@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Connection</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+
+  <form method="POST" action="traitement.php">
+  <div class="container">
+    
+    <div class="form-section">
+
+      <h3>Some Text</h3>
+
+      <div class="input-row">
+        <input type="text" name="nomUser" size="45%" placeholder="Nom d'utilisateur">
+      </div>
+
+      <div class="input-row">
+        <input type="Email" name="mail" size="45%" placeholder="Adresse Electronique">
+      </div>
+
+      <div class="input-row">
+        <select>
+          <option>$nbsp; $nbsp; $nbsp; $nbsp; $nbsp; $nbsp; $nbsp; $nbsp; $nbsp; $nbsp; </option>
+          <option>Acheteur</option>
+          <option>Vendeur</option>
+        </select> 
+        </input>
+      </div>
+
+      <div class="input-row">
+        <input type="password" name="mdp" size="45%" placeholder="Mot de passe">
+      </div>
+
+       <div class="input-row">
+        <input type="password" name="mdp" size="45%" placeholder="Confirmer mot de passe">
+      </div>
+
+      <div class="input-row">
+        <input type="number" name="tel" size="45%" placeholder="Numéro de téléphone">
+        <select>
+          <option></option>
+          <option></option>
+        </select> 
+
+      </div>
+
+      <div>
+        <div >
+            <input type="checkbox" name="lu" id="lu">
+            <label><strong>J'ai lu les conditions générales d'utilisation et la politique de confidentialité </strong></label>
+        </div>
+
+      <div class="btn-row">
+        <input class="but" type="button" value="S'inscrire" id="btn">
+      </div>
+
+     <div class="row">
+        <div class="col">
+            <label> <strong>Déjà membre?</strong></label>
+        </div>
+        <a id="couleur-text" href="connexion.html">Se connecter</a>
+      </div>
+
+    </div>
+
+  </div>    
+
+  </form>
+
+
+
+</body>
+</html>

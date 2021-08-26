@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Connection</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="form-section">
+
+      <h1>Some Text</h1>
+
+      <div class="input-row">
+        <input type="text" name="nomUser" size="38" placeholder="Email/Nom d'utilisateur">
+      </div>
+
+      <div class="input-row">
+        <input type="password" name="mdp" size="38" placeholder="Mot de passe">
+      </div>
+
+      <form method="POST">
+        <div class="g-recaptcha" data-sitekey="6LcqXoUbAAAAAJmpmgP7oLhjpG9YqeLdgJFA-KuZ"></div>
+      </form>
+
+
+      <div class="btn-row">
+        <input class="but" type="button" value="Se Connecter" id="btn">
+      </div>
+
+      <div class="row">
+        <div class="col">
+            <input type="checkbox" name="rappel" id="rappel">
+            <label><strong>Se souvenir de moi</strong></label>
+        </div>
+        <a id="text" href="#">Mdp oublié?</a>
+      </div>
+
+      <hr>
+
+     <div class="row">
+        <div class="col">
+            <label> <strong>Pas encore membre?</strong></label>
+        </div>
+        <a id="couleur-text" href="inscription.html">S'inscrire</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
