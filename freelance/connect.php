@@ -24,32 +24,47 @@ if (isset($_POST['connect'])) {
 <html>
 <head>
   <title>Connection</title>
+
+  <!-- css -->
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/connect.css">
+  <!-- js -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-  <div class="container">
-    <div class="logo">
-    </div>
+  <div class="cantainer">
+    <h1>Connectez vous</h1>
+    <form method="POST">
 
-    <div class="formSession">
-      <form method="POST">
-        <div class="row">
-          <input type="email" type="text" name="nomUser" placeholder="Email/Nom d'utilisateur">
+      <!-- mail -->
+      <div class="mb-3 ">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="nomUser"  id="exampleInputEmail1" aria-describedby="emailHelp">
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+       </div>
+
+        <!-- mot de passe  -->
+        <div class="mb-3 ">
+         <label for="exampleInputPassword1" class="form-label">Password</label>
+         <input type="password" class="form-control " name="mdp" id="exampleInputPassword1">
         </div>
-        <div class="row">
-          <input type="password" name="mdp" placeholder="Mot de passe">
+        <!-- capchat -->
+        <div class="g-recaptcha"   data-sitekey="6LcqXoUbAAAAAJmpmgP7oLhjpG9YqeLdgJFA-KuZ"></div>
+
+        <!-- checkbox  -->
+       <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <a href="#" class="lien">Mot de passe oublié ?</a>
         </div>
-      <div class="g-recaptcha" data-sitekey="6LcqXoUbAAAAAJmpmgP7oLhjpG9YqeLdgJFA-KuZ"></div>
-      <input type="submit" value="connecter" name="connect">
-        <div class="row">
-          <div class="col">
-            <input type="checkbox" name="rappel" id="rappel">
-            <label>Se souvenir de moi</label>
-          </div>
-          <a href="mdp-oublié.html">Mot de passe oublié ?</a>
-        </div>
-      </form>
-    </div>
+      <div class="mb-3 mx-auto">
+        <button type="submit" class="btn btn-success  col-12 " name="connect">Se Connecter</button>
+       </div>
+      <p>Pas encore membre?<a href="inscription.php">S'inscrire maintenant</a></p>
+    
+    </form>
   </div>
 </body>
 </html>
